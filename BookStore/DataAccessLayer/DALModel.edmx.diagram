@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="2ea45335f8aa413b87699a60c861e309" Name="Diagram1">
+        <EntityTypeShape EntityType="BookStoreDBModel.C__MigrationHistory" Width="1.5" PointX="0.5" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BookStoreDBModel.AspNetRoles" Width="1.5" PointX="0.5" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BookStoreDBModel.AspNetUserClaims" Width="1.5" PointX="6.25" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BookStoreDBModel.AspNetUserLogins" Width="1.5" PointX="6.25" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BookStoreDBModel.AspNetUsers" Width="1.5" PointX="3.25" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BookStoreDBModel.Attributes" Width="1.5" PointX="6.25" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BookStoreDBModel.Author" Width="1.5" PointX="0.625" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="BookStoreDBModel.Books" Width="1.5" PointX="3.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="BookStoreDBModel.Books_AttributesValue" Width="1.5" PointX="6.25" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BookStoreDBModel.Country" Width="1.5" PointX="3.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BookStoreDBModel.Genre" Width="1.5" PointX="0.625" PointY="3.375" IsExpanded="true" />
+        <AssociationConnector Association="BookStoreDBModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="BookStoreDBModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="BookStoreDBModel.FK_Books_AttributesValue_Attributes" ManuallyRouted="false" />
+        <AssociationConnector Association="BookStoreDBModel.FK_Books_Author" ManuallyRouted="true" >
+          <ConnectorPoint PointX="2.125" PointY="1.7466177009976525" />
+          <ConnectorPoint PointX="3.481875" PointY="1.7466177009976525" />
+          <ConnectorPoint PointX="3.481875" PointY="2.1320094313063063" />
+          <ConnectorPoint PointX="3.75" PointY="2.1320094313063063" />
+        </AssociationConnector>
+        <AssociationConnector Association="BookStoreDBModel.FK_Books_Books_AttributesValue" ManuallyRouted="false" />
+        <AssociationConnector Association="BookStoreDBModel.FK_Books_Country" ManuallyRouted="false" />
+        <AssociationConnector Association="BookStoreDBModel.FK_Books_Genre" ManuallyRouted="false" />
+        <AssociationConnector Association="BookStoreDBModel.AspNetUserRoles" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
